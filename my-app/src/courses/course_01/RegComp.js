@@ -2,6 +2,10 @@ import React, { Component } from "react";
 
 class RegComp extends Component {
   render() {
+    console.log(
+      "___________________________[Regular component ]________________________________"
+    );
+
     return (
       <div>
         <h1 className="text-primary">
