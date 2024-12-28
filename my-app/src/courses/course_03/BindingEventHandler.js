@@ -29,6 +29,8 @@ class BindingEventHandler extends Component {
           value={this.state.name}
           onChange={this.updateName}
         />
+        {/* Solution [04] by create methods with ES6 arrow function in render component method:
+        in constuctor methon: */}
         <button className="btn btn-danger" onClick={this.alertMessage}>
           Shaw message
         </button>
