@@ -8,12 +8,12 @@ class BindingEventHandler extends Component {
       name: "",
     };
   }
-  // Solution [01] by create methods with arrow manner:
-  alertMessage = () => {
+  // Solution [02] by create methods with vanilla js and use bind function in render component:
+  alertMessage() {
     this.state.name
       ? alert(`Hello and welcome, ${this.state.name} (^_^) `)
-      : alert("We do not accept empty vale for name propert (T_T) ");
-  };
+      : alert("We do not accept empty value for name propert (T_T) ");
+  }
   updateName = (e) => {
     this.setState({ name: e.target.value });
   };
@@ -27,7 +27,10 @@ class BindingEventHandler extends Component {
           value={this.state.name}
           onChange={this.updateName}
         />
-        <button className="btn btn-danger" onClick={this.alertMessage}>
+        <button
+          className="btn btn-danger"
+          onClick={this.alertMessage.bind(this)}
+        >
           Shaw message
         </button>
       </div>
