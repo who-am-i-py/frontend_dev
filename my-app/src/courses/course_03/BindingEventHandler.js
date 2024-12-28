@@ -7,8 +7,10 @@ class BindingEventHandler extends Component {
     this.state = {
       name: "",
     };
+    this.alertMessage = this.alertMessage.bind(this);
+
+    // Solution [03] by create methods with vanilla js and use bind function in constuctor methon:
   }
-  // Solution [02] by create methods with vanilla js and use bind function in render component:
   alertMessage() {
     this.state.name
       ? alert(`Hello and welcome, ${this.state.name} (^_^) `)
@@ -27,10 +29,7 @@ class BindingEventHandler extends Component {
           value={this.state.name}
           onChange={this.updateName}
         />
-        <button
-          className="btn btn-danger"
-          onClick={this.alertMessage.bind(this)}
-        >
+        <button className="btn btn-danger" onClick={this.alertMessage}>
           Shaw message
         </button>
       </div>
