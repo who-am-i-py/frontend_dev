@@ -1,52 +1,49 @@
 import React, { Component } from "react";
-import LifeCycleB from "./LifeCycleB";
 
-class LifeCycleA extends Component {
+class LifeCycleB extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       first: "hello",
     };
-    console.log("[constructor]==[LifeCycleA]");
+    console.log("[constructor]==[LifeCycleB]");
   }
   static getDerivedStateFromProps = (state, prop) => {
-    console.log("[getDerivedStateFromProps]==[LifeCycleA]");
+    console.log("[getDerivedStateFromProps]==[LifeCycleB]");
     return null;
   };
   componentDidMount = () => {
-    console.log("[componentDidMount]==[LifeCycleA]");
+    console.log("[componentDidMount]==[LifeCycleB]");
   };
   shouldComponentUpdate = () => {
-    console.log("[shouldComponentUpdate]==[LifeCycleA]");
+    console.log("[shouldComponentUpdate]==[LifeCycleB]");
     return true;
   };
   getSnapshotBeforeUpdate = (prevState, prevProp) => {
-    console.log("[getSnapshotBeforeUpdate]==[LifeCycleA]");
+    console.log("[getSnapshotBeforeUpdate]==[LifeCycleB]");
     return null;
   };
   componentDidUpdate = () => {
-    console.log("[componentDidUpdate]==[LifeCycleA]");
+    console.log("[componentDidUpdate]==[LifeCycleB]");
   };
   updateHandler = () => {
-    console.log("[updateHandler]==[LifeCycleA]");
+    console.log("[updateHandler]==[LifeCycleB]");
     this.setState({ first: "Goodbye " });
   };
 
   render() {
-    console.log("[render]==[LifeCycleA]");
+    console.log("[render]==[LifeCycleB]");
 
     return (
       <div>
-        <h1>LifeCycleA, {this.state.first}</h1>
+        <h1>LifeCycleB, {this.state.first}</h1>
         <button className="btn btn-primary" onClick={this.updateHandler}>
-          Update Phase [A]
+          Update Phase [B]
         </button>
-        <hr />
-        <LifeCycleB />
       </div>
     );
   }
 }
 
-export default LifeCycleA;
+export default LifeCycleB;
