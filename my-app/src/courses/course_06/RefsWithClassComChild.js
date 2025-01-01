@@ -12,7 +12,7 @@ class RefsWithClassComChild extends Component {
     return (
       <div>
         <h1>Ref with class component</h1>
-        <input ref={this.inputRef} />
+        <input ref={this.inputRef} className="form-control" />
       </div>
     );
   }
