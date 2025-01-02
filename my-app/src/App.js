@@ -7,6 +7,7 @@ import ParentCompMemo from "./courses/course_04/ParentCompMemo";
 import RefDemo from "./courses/course_05/RefDemo";
 import RefDemoWithCallBack from "./courses/course_05/RefDemoWithCallBack";
 import FocusInput from "./courses/course_06/FocusInputComp";
+import RefForwordParent from "./courses/course_07/RefForwordParent";
 function App() {
   return (
     <div className="App">
@@ -17,7 +18,8 @@ function App() {
         {/* <ParentCompMemo /> */}
         {/* <RefDemo />
         <RefDemoWithCallBack /> */}
-        <FocusInput />
+        {/* <FocusInput /> */}
+        <RefForwordParent />
       </header>
     </div>
   );
