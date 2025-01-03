@@ -8,6 +8,7 @@ import RefDemo from "./courses/course_05/RefDemo";
 import RefDemoWithCallBack from "./courses/course_05/RefDemoWithCallBack";
 import FocusInput from "./courses/course_06/FocusInputComp";
 import RefForwordParent from "./courses/course_07/RefForwordParent";
+import ContainerModel from "./courses/course_08/Portals";
 function App() {
   return (
     <div className="App">
@@ -19,7 +20,8 @@ function App() {
         {/* <RefDemo />
         <RefDemoWithCallBack /> */}
         {/* <FocusInput /> */}
-        <RefForwordParent />
+        {/* <RefForwordParent /> */}
+        <ContainerModel />
       </header>
     </div>
   );
