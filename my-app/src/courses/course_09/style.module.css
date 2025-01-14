@@ -1,0 +1,13 @@
+.toolkitOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #4e4e4ed0;
+}
+.toolkitContainer {
+  min-height: 60vh;
+  color: rgb(255, 253, 253);
+  padding: 30px;
+}
